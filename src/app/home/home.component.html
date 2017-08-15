@@ -1,0 +1,177 @@
+ <div class="wrapper">
+        <div class="sidebar-wrapper" *ngFor="let post of posts">
+            <div class="profile-container">
+                <img class="profile" src="assets/images/profile.jpg" style="height: 150px; width: 150px;" alt="" />
+                <h1 class="name">{{post.first_name}}</h1>
+                <h3 class="tagline">Full Stack Developer</h3>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: yourname@email.com">{{post.Email_id}}</a></li>
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:+91 8986332361">+91 8986332361</a></li>
+                    <li class="website"><i class="fa fa-globe"></i><a href="http://tizusresearch.blogspot.in/" target="_blank">My Research Blog </a></li>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/sujit-kumar-yadav-673a9586/" target="_blank">Linkedin Profile</a></li>
+                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/suz1it" target="_blank">https://github.com/suz1it</a></li>
+                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/Suzit_Ydv" target="_blank">@Suzit_Ydv</a></li>
+                </ul>
+            </div><!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                <div class="item">
+                    <h4 class="degree"><i class="fa fa-graduation-cap" aria-hidden="true"></i> {{post.Degree}}</h4>
+                    <h4 class="degree">{{post.Branch}}</h4>
+                    <h5 class="meta">{{post.University}}</h5>
+                    <h5 class="meta">{{post.College}}</h5>
+                    <div class="time">{{post.Be_year}}</div>
+                    {{post.Award_be}}
+                </div><!--//item-->
+                <div class="item">
+                    <h4 class="degree"><i class="fa fa-graduation-cap" aria-hidden="true"></i> {{post.twlth}}</h4>
+                    <h5 class="meta">{{post.College_12}}</h5>
+                    <div class="time">2009-2011</div>
+                    {{post.Award_12}}
+                </div><!--//item-->
+            </div><!--//education-container-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>{{post.language1}}<span class="lang-desc">(Professional)</span></li>
+                    <li>{{post.language2}}<span class="lang-desc">(Native)</span></li>
+                    <li>{{post.language3}} <span class="lang-desc">(Professional)</span></li>
+                    <li>{{post.language4}} <span class="lang-desc">(Native)</span></li>
+                    <li>{{post.language5}} <span class="lang-desc">(Professional)</span></li>
+                </ul>
+            </div><!--//interests-->
+            
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Interests</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>{{post.interest1}}</li>
+                    <li>{{post.interest2}}</li>
+                    <li>{{post.interest3}}</li>
+                    <li>{{post.interest4}}</li>
+                </ul>
+            </div><!--//interests-->
+            
+        </div><!--//sidebar-wrapper-->
+        
+
+        <div class="main-wrapper" *ngFor="let post of posts">
+            
+            <section class="section summary-section">
+                <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+                <div class="summary">
+                    <p>{{post.summery}}</p>
+                </div><!--//summary-->
+            </section><!--//section-->
+            
+            <section class="section experiences-section">
+                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">{{post.designation}}</h3>
+                            <div class="time">{{post.from}}-{{post.to}}</div>
+                        </div><!--//upper-row-->
+                        <div class="company">{{post.company_name}}, {{post.city}} - {{post.country}}</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p> {{post.proed_role}}. {{post.proed_role2}}</p>
+                    </div><!--//details-->
+                </div><!--//item-->
+                
+            </section><!--//section-->
+
+
+            
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+                <div class="intro">
+                    <p>{{post.Project_description}}</p>
+                </div><!--//intro-->
+
+
+                <div class="item">
+                    <span class="project-title"><a href="#hook">{{post.project1}}</a></span> - <span class="project-tagline">{{post.project1_desc}} .</span>
+                    
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">{{post.project2}}</a></span> - 
+                    <span class="project-tagline">{{post.project2_desc}} </span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank">{{post.project3}}</a></span> - <span class="project-tagline">{{post.project3_desc}} </span>
+                </div><!--//item-->
+                <div class="item">
+                    <span class="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">{{post.project4}}</a></span> - <span class="project-tagline">{{post.project4_desc}}  </span>
+                </div><!--//item-->
+            </section><!--//section-->
+
+
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+                <div class="skillset">        
+                    <div class="item">
+                        <h3 class="level-title">{{post.tech_skill1}}</h3>
+
+                        <div class="level-bar">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:78%">
+                                       <p>78%</p>
+                            </div>                                     
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+
+                    
+                    <div class="item">
+                        <h3 class="level-title">{{post.tech_skill2}}</h3>
+                        <div class="level-bar">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:88%">
+                                     <p>88%</p>  
+                            </div>                                     
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">{{post.tech_skill3}}</h3>
+                        <div class="level-bar">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                     <p>70% </p> 
+                            </div>                                     
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">{{post.tech_skill4}}</h3>
+                        <div class="level-bar">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                      <p>75%</p>
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">{{post.tech_skill5}}</h3>
+                        <div class="level-bar">
+                            <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                                      <p>55%</p>
+                            </div>                                    
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                
+                    
+                </div>  
+            </section><!--//skills-section-->
+            
+        </div><!--//main-body-->
+    </div>
+ 
+    <footer class="footer">
+        <div class="text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fa fa-laptop"></i> by <a href="https://www.facebook.com/suzit.yadav" target="_blank">Sujit Kumar Yadav</a></small>
+        </div><!--//container-->
+    </footer><!--//footer-->

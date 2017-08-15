@@ -1,0 +1,21 @@
+<svg width="279" height="123" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_1_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="#0eb57d" id="canvas_background" height="125" width="281" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="1" x="1" height="480" width="640"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text filter="url(#svg_1_blur)" stroke="#000" transform="matrix(4.968808174133301,0,0,3.7857143878936768,-623.1028833389282,-312.0000114440918) " font-weight="bold" opacity="0.67" xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="23" id="svg_1" y="103.037737" x="128.421718" fill="#000000">SKY</text>
+  <path id="svg_4" d="m7.547497,31.270792l25.481579,-24.895791l36.036843,0l25.481579,24.895791l0,35.208411l-25.481579,24.895794l-36.036843,0l-25.481579,-24.895794l0,-35.208411z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <text stroke="#000" transform="matrix(1.143775377659182,0,0,1,-5.541027329247328,0) " xml:space="preserve" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="23" id="svg_7" y="114" x="9.919462" fill-opacity="null" stroke-opacity="null" stroke-width="null" fill="#000000">Software Engineer</text>
+ </g>
+</svg>
